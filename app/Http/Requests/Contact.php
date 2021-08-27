@@ -27,4 +27,18 @@ class Contact extends FormRequest
             //
         ];
     }
+
+    public function messages()
+    {
+        return [
+            //
+        ];
+    }
+
+    public function attributes()
+    {
+        return [
+            //
+        ];
+    }
 }

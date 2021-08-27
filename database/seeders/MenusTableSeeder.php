@@ -3,19 +3,19 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\Menu;
 
-class DatabaseSeeder extends Seeder
+class MenusTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Auto generated seed file.
      *
      * @return void
      */
     public function run()
     {
-        $this->call([
-            ProductSeeder::class,
-            CategorySeeder::class
+        Menu::firstOrCreate([
+            'name' => 'admin',
         ]);
     }
 }
